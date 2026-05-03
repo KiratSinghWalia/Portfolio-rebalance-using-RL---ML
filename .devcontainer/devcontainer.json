@@ -1,22 +1,20 @@
 {
   "name": "portfolio-rebalance",
-  "build": {
-    "dockerfile": "../Dockerfile",
-    "context": ".."
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
   },
-  "workspaceFolder": "/workspace",
+  "postCreateCommand": "pip install uv && uv sync --frozen",
   "customizations": {
     "vscode": {
-      "settings": {
-        "python.defaultInterpreterPath": "/workspace/.venv/bin/python",
-        "python.terminal.activateEnvironment": true
-      },
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance"
-      ]
+        "ms-python.venv",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/workspaces/portfolio-rebalance/.venv/bin/python"
+      }
     }
-  },
-  "postCreateCommand": "uv sync",
-  "remoteUser": "root"
+  }
 }
