@@ -5,8 +5,8 @@
 	"build": { 
 		"context": "..",
 		"dockerfile": "Dockerfile"
-	}
-
+	},
+	"postCreateCommand": "conda install -c conda-forge uv -y && uv sync"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
