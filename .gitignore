@@ -15,3 +15,12 @@ ppo_portfolio_model.zip
 lgbm_final_model.pkl
 
 test_comparison.png
+
+.venv
+__pycache__
+*.pyc
+.git
+.DS_Store
+.ipynb_checkpoints
+.env
+.env.*
