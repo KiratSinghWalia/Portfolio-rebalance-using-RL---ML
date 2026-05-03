@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+data/*
+!data/.gitkeep
+ppo_portfolio_model.zip
+
+lgbm_final_model.pkl
+
+test_comparison.png
