@@ -139,7 +139,8 @@ Or:
 ```bash
 uv run python src/portfolio_rebalance.py ML-compare
 ```
-![Results](test_comparison.png)
+<img width="1199" height="697" alt="image" src="https://github.com/user-attachments/assets/0da12007-a31e-4cc7-a205-78a1c64cc91a" />
+
 ---
 
 ## 📁 Project Structure
