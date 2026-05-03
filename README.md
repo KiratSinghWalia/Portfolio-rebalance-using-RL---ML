@@ -98,7 +98,8 @@ uv run python src/portfolio_rebalance.py RL-compare \
     --tickers RELIANCE.NS HDFCBANK.NS TCS.NS INFY.NS ICICIBANK.NS HINDUNILVR.NS LT.NS BHARTIARTL.NS ITC.NS ASIANPAINT.NS SBIN.NS GLD TLT
 ```
 
-Figure_3.png
+<img width="1103" height="495" alt="image" src="https://github.com/user-attachments/assets/a4b954f0-13ed-44a1-8872-f6ba79dddf31" />
+
 
 ---
 
