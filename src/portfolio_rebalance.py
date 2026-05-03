@@ -1,8 +1,7 @@
 import argparse
-from lib.data_script import Data
+
 import json
-from lib.RL_script import RL_model
-from lib.lightgb import compare
+
 
 
 def main() -> None:
@@ -29,14 +28,16 @@ def main() -> None:
 
     match args.command:
         case "load-data":
+            from lib.data_script import Data
             Data(args.tickers,args.asset_mapping)
 
         case "RL-train-model":
+            from lib.RL_script import RL_model
             RL = RL_model(args.tickers)
             RL.model_training()
         
         case "RL-compare":
-
+            from lib.RL_script import RL_model
             RL = RL_model(args.tickers)
             RL.comparison()
         
@@ -47,6 +48,7 @@ def main() -> None:
             script = Path(__file__).parent / 'lib' / 'lightgb.py'
             subprocess.run([sys.executable, str(script)], check=True)
         case "RL_latest_weights":
+            from lib.RL_script import RL_model
             RL = RL_model(args.tickers)
             RL.latest_portfolio_weights()
         case _:

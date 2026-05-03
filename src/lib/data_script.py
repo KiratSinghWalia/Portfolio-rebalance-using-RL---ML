@@ -135,5 +135,5 @@ def data_RL(ticker,start:str,end:str):
     rets.to_csv(data_path/'rets.csv',index=True)
 
 if __name__ == "__main__":
-    pass
+    Data(tickers, asset_type_map)
 
