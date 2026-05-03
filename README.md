@@ -98,7 +98,7 @@ uv run python src/portfolio_rebalance.py RL-compare \
     --tickers RELIANCE.NS HDFCBANK.NS TCS.NS INFY.NS ICICIBANK.NS HINDUNILVR.NS LT.NS BHARTIARTL.NS ITC.NS ASIANPAINT.NS SBIN.NS GLD TLT
 ```
 
-image.png
+Figure_3.png
 
 ---
 
@@ -138,7 +138,7 @@ Or:
 ```bash
 uv run python src/portfolio_rebalance.py ML-compare
 ```
-image.png
+test_comparison.png
 ---
 
 ## 📁 Project Structure
