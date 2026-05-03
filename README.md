@@ -138,7 +138,7 @@ Or:
 ```bash
 uv run python src/portfolio_rebalance.py ML-compare
 ```
-test_comparison.png
+![Results](test_comparison.png)
 ---
 
 ## 📁 Project Structure
